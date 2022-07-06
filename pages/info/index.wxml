@@ -1,0 +1,6 @@
+<!--pages/info/index.wxml-->
+<view>------------------个人信息--------------------------</view>
+<view><text>个人昵称：{{nickname}}</text></view>
+<view><text>个人邮箱：{{email}}</text></view>
+<view><text>个人电话：{{phone}}</text></view>
+<view><text>个人地址：{{address}}</text></view>

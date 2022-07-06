@@ -1,0 +1,8 @@
+<!--pages/detail_title/detail_title.wxml-->
+
+
+<view class="title">{{title}}
+</view>
+<view class="title1">{{articlelist[0].article}}</view>
+
+

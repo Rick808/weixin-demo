@@ -1,0 +1,32 @@
+<!--pages/person/person.wxml-->
+
+<view wx:if="{{token}}">
+<view class="userinfo">
+    <image class="userinfo-avatar" src="{{list.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">欢迎你，{{list.nickname}}</text>
+     <image src="../images/22.png" class="account-bg">
+    </image> 
+  </view>
+
+<view class="xxx">    
+    <mp-cell ext-class="my-cells" link url="../../pages/info/index" value="个人信息">
+    </mp-cell>
+    <mp-cell ext-class="my-cells" link url="../pass/index" value="修改密码">
+    </mp-cell>
+    <mp-cell ext-class="my-cells" link url="../../pages/record/record" value="病诊记录">
+    </mp-cell>
+    <mp-cell ext-class="my-cells" link url="../../pages/about/index" value="关于我们">
+    </mp-cell>
+</view>
+
+    <view class="btn-box">
+    <button bindtap="fun1" style="width:100%" type="primary">退出登录</button>
+  </view>
+</view>
+<view wx:else="{{!token}}">
+<view class="turn">  
+
+    <button class="weui-btn weui-btn_primary" bindtap="fun1">点击登录</button>
+</view>
+</view>
+

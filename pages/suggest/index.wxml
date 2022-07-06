@@ -1,0 +1,41 @@
+<!--pages/suggest/index.wxml-->
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-form">
+		<view class="weui-form__text-area">
+			<h2 class="weui-form__title">问题描述</h2>
+			<view class="weui-form__desc">输入更多病情特征具体内容</view>
+		</view>
+		<view class="weui-form__control-area">
+      <view class="weui-cells__group weui-cells__group_form">
+        <view class="weui-cells__title">问题描述</view>
+        <view class="weui-cells weui-cells_form">
+            <view class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请描述你所发生的问题" placeholder-class="weui-input__placeholder" rows="3"></textarea>
+                    <view aria-role="option" class="weui-textarea-counter"></view>
+                </view>
+            </view>
+        </view>
+      </view>
+		</view>
+		<view class="weui-form__opr-area">
+			<view class="weui-btn weui-btn_primary" aria-role="button">确定</view>
+		</view>
+	</view>
+</view>
+      
+     <!-- <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+         
+                <view class="weui-search-bar__box">
+                    <icon  type="search" size="14"></icon>
+                    <input type="text" bindconfirm="searchMovie" class="weui-search-bar__input" placeholder="请输入搜索内容"/>
+                </view>
+            </view>
+
+            <view  bindtap='go'>提交</view>
+        </view>
+    </view> -->
+
+

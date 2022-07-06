@@ -1,0 +1,24 @@
+<!--pages/login/index.wxml-->
+<!--pages/login/index.wxml-->
+
+<view class="login-icon">
+  <image class="login-img" src="../images/loginLog.jpg"></image>
+</view>
+
+
+
+
+
+
+  <mp-form id="form" models="{{formData}}">
+    <mp-cell prop="mobile" title="账号" ext-class="weui-cell_inp">
+      <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入账号" />
+    </mp-cell>
+    <mp-cell prop="date" title="密码" ext-class="weui-cell_inp">
+      <input password bindinput="formInputChange" data-field="psa" class="weui-input" placeholder="请输入密码" />
+    </mp-cell>
+
+  </mp-form>
+  <view class="btn-box">
+    <button bindtap="loginFun" type="primary">登录</button>
+  </view>

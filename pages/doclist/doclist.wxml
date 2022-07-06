@@ -1,0 +1,42 @@
+<!--pages/doclist/doclist.wxml-->
+<view class="weui-cells__title">医生列表</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator aria-labelledby="js_cell_l1_bd" url="../chat/chat" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../images/doc.jpg"></image>
+                </view>
+                <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+                  <view>王医生</view>
+                  <view class="weui-cell__desc">在线</view>
+                  <!-- <view class="weui-cell__desc">副标题</view> -->
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+            </navigator>
+            <navigator aria-labelledby="js_cell_l1_bd" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../images/doc1.png"></image>
+                </view>
+                <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+                  <view>张医生</view>
+                  <view class="weui-cell__desc">不在线</view>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+            </navigator>
+            <navigator aria-labelledby="js_cell_l1_bd" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../images/doc3.png"></image>
+                </view>
+                <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+                  <view>李医生</view>
+                  <view class="weui-cell__desc">不在线</view>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+            </navigator>
+            <!-- <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            
+                <view class="weui-cell__bd">
+                  <view>cell standard</view>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator> -->
+        </view>

@@ -1,0 +1,7 @@
+/* pages/webtask/index.wxss */
+input,textarea{
+    border:1px black solid;
+}
+button,input,textarea{
+    margin:10px;
+}

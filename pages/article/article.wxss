@@ -1,0 +1,27 @@
+/* pages/article/article.wxss */
+.card{
+   width: 90%;
+   margin-left: 5%;
+   height: 370rpx;
+   background: rgb(156, 187, 170);
+   border-radius: 10rpx;
+   box-shadow: 5px 5px 5px #cdcfcf;
+   margin: 20rpx;
+
+   color: rgb(32, 27, 27);
+   font-size: 35rpx;
+   text-overflow:ellipsis;
+   z-index: -1;
+   display: -webkit-box;
+   word-break: break-all;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 8;
+   overflow: hidden;
+  }
+  
+.recruit-list .card .title{
+   margin: 5rpx;
+   font-size: 15px;
+   font-weight: 600px;
+   
+}

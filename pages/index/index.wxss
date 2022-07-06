@@ -1,0 +1,36 @@
+/**index.wxss**/
+.search{
+    width: 90vw;
+    height: 60rpx;
+    line-height : 60rpx;
+    text-align: center;
+    margin: 30rpx auto;
+    background-color: #f7f7f7;
+    color : #bbb;
+
+}
+.search icon{
+    margin-right:10rpx ;
+}
+.recruit-list .sub_top{
+    margin: 26rpx;
+}
+.recruit-list{
+    padding:0 10px;
+}
+.recruit-list>view{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.recruit-list>view image{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 5px;
+
+}
+.recruit-list .sub_top .title{
+    font-size: 15px;
+    font-weight: 600px;
+}

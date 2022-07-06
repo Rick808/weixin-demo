@@ -1,0 +1,35 @@
+<!--pages/next/index.wxml-->
+
+
+    <text>请输入具体时间:</text>
+      <input
+        bindinput="handleInputChange"
+        class="input1"
+        value="{{inputVal}}"
+        placeholder="以XXXX-YY-ZZ hh:MM:NN的格式输入，注意空格"
+      />
+
+    <view>
+    <text>请输入病情分类:</text>
+      <input
+        bindinput="handleInputChange1"
+        class="input2"
+        value="{{inputVal1}}"
+        placeholder="比如外科、内科、消化科等"
+      />
+    </view>
+    <view>
+    <text>请输入用药历史:</text>
+      <input
+        bindinput="handleInputChange2"
+        class="input3"
+        value="{{inputVal2}}"
+        placeholder="服用过何种药物"
+      />
+    </view>
+
+    
+    <!-- 此处并非用的button按钮,照样可以提交表单数据 -->
+    <view>
+      <button class="submitBtn" bindtap="handleSubmit" type="primary">提交</button>
+    </view>

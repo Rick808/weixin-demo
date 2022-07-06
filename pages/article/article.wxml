@@ -1,0 +1,16 @@
+<!--pages/article/article.wxml-->
+<view class="sub_top">热点文章</view>
+
+<view class="recruit-list">
+
+  <view wx:for="{{articlelist}}">
+    <view class="card">
+     
+        <view class="title">{{item.title}}</view>
+     
+        <view class="title1">{{item.p_text}}</view>
+
+      
+    </view>
+  </view>
+</view>

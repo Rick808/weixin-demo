@@ -1,0 +1,49 @@
+<!--pages/record/record.wxml-->
+<!-- <view class="contain">
+    <view class="name">{{nickname}},你好</view>
+</view> -->
+
+
+	<view class="page__hd">
+		<view class="page__title">病情记录</view>
+		<view class="page__desc">预览</view>
+		<button bindtap="turnindex">返回首页</button>
+	</view>
+
+<view wx:for="{{list}}">
+	<view class="page__bd">
+		<view class="weui-form-preview">
+
+			<view aria-labelledby="p1 js_a11y_comma p2 js_a11y_comma p3" class="weui-form-preview__bd" aria-role="option">
+				<view id="p1" class="weui-form-preview__item">
+					<label class="weui-form-preview__label">姓名</label>
+					<text class="weui-form-preview__value">{{item.name}}</text>
+				</view>
+				<view id="p2" class="weui-form-preview__item">
+					<label class="weui-form-preview__label">病情特征</label>
+					<text class="weui-form-preview__value">{{item.disease}}</text>
+				</view>
+				<view id="p3" class="weui-form-preview__item">
+					<label class="weui-form-preview__label">病情分类</label>
+					<text class="weui-form-preview__value">{{item.sort}}</text>
+				</view>
+				<view id="p4" class="weui-form-preview__item">
+					<label class="weui-form-preview__label">具体时间</label>
+					<text class="weui-form-preview__value">{{item.time}}</text>
+				</view>
+			</view>
+            <view class="weui-form-preview__hd" aria-role="option">
+				<view class="weui-form-preview__item">
+					<label class="weui-form-preview__label">智能诊断</label>
+					<text class="weui-form-preview__value">{{item.suggest}}</text>
+					<!-- <em class="weui-form-preview__value">{{item.suggest}},ssssssssssssssssssssssssssss</em> -->
+				</view>
+			</view>
+			<!-- <view class="weui-form-preview__ft">
+				<navigator class="weui-form-preview__btn weui-form-preview__btn_primary" aria-role="button" url="javascript:">操作</navigator>
+			</view> -->
+		</view>
+		
+
+	</view>
+</view>

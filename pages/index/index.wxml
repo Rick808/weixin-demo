@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<!-- <view class='warp'>
+  <view class='list'>
+  <view class='style {{item.id==num?"active":""}}' catchtap='clickList' wx:for="{{message}}" wx:key="" id="{{index}}">{{item.text}}</view>
+  </view>
+   <view class='content'>{{content}}</view>
+  </view> -->
+
+<navigator class="search" url="/pages/search/search">
+  <icon type="search" size="10"></icon>搜索
+</navigator>
+
+<swiper indicator-dots="true" autoplay="true" interval="4000" duration="1000" style="height:150px;">
+  <block wx:for="{{swiperList}}" wx:key="index">
+    <swiper-item>
+
+      <image src="{{item.url}}" style="width:100%;" bindtap="swipclick">
+      </image>
+
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="recruit-list">
+  <view class="sub_top">热点文章</view>
+  <view wx:for="{{articlelist}}">
+    <navigator class="photo" url="/pages/detail_title/detail_title?url1={{item.url1}}&title={{item.title}}">
+      <image wx:if='{{ item.url1 }}' src="{{item.img}}"></image>
+    </navigator>
+
+    <view>
+      <view class="title">{{item.title}}</view>
+
+    </view>
+  </view>
+</view>

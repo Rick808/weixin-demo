@@ -1,0 +1,13 @@
+/* pages/detail_title/detail_title.wxss */
+.title{
+    background-color: #1AF4E4;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 3px gainsboro;
+}
+.title1{
+    background: gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
